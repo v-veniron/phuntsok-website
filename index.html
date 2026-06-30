@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phuntsok — Creative Designer & Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Phuntsok</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#portfolio" class="nav-link">作品集</a></li>
+                <li><a href="#ai-tools" class="nav-link">AI工具集</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">联系我</a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background Decorations -->
+        <div class="hero-decor">
+            <div class="decor-circle-dots"></div>
+            <div class="decor-grid"></div>
+            <div class="decor-shape shape-1"></div>
+            <div class="decor-shape shape-2"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">👋 你好，我是</p>
+                <h1 class="hero-title">
+                    一个有创意的<br>
+                    <span class="highlight">设计师</span> & <span class="highlight">开发者</span>
+                </h1>
+                <p class="hero-subtitle">
+                    专注于前端开发与用户体验，热爱创造美观且实用的数字产品。
+                    将创意转化为交互式体验，让每一个像素都有意义。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span>我的作品</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        <span>关于我</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">年经验</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">完成项目</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">满意客户</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-glow"></div>
+                    <div class="hero-avatar">
+                        <img src="images/DSC04989.jpg" alt="Phuntsok">
+                    </div>
+                    <div class="floating-badge badge-html">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="floating-badge badge-css">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="floating-badge badge-js">
+                        <i class="fab fa-js"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">作品集</span>
+                <h2 class="section-title">精选作品</h2>
+                <p class="section-desc">每一个项目都是一段独特的创作旅程</p>
+            </div>
+
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="photo">摄影</button>
+                <button class="filter-btn" data-filter="design">设计</button>
+                <button class="filter-btn" data-filter="dev">开发</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="photo">
+                    <div class="portfolio-image">
+                        <img src="images/DSC07437.JPG" alt="作品 1">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">摄影</span>
+                            <h3>城市光影</h3>
+                            <p>捕捉都市夜晚的霓虹与节奏</p>
+                            <a href="#" class="portfolio-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photo">
+                    <div class="portfolio-image">
+                        <img src="images/DSC07470.JPG" alt="作品 2">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">摄影</span>
+                            <h3>夜色氛围</h3>
+                            <p>探索光影与色彩的交织</p>
+                            <a href="#" class="portfolio-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="images/IMG_0211.JPG" alt="作品 3">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">设计</span>
+                            <h3>视觉创意</h3>
+                            <p>艺术与功能的完美融合</p>
+                            <a href="#" class="portfolio-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="dev">
+                    <div class="portfolio-card dev-card">
+                        <div class="dev-card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web 应用开发</h3>
+                        <p>使用最新技术栈构建响应式、高性能的 Web 应用程序</p>
+                        <div class="dev-tags">
+                            <span>React</span>
+                            <span>Vue</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="dev">
+                    <div class="portfolio-card dev-card">
+                        <div class="dev-card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>移动端开发</h3>
+                        <p>跨平台移动应用设计与开发，确保一致的优质体验</p>
+                        <div class="dev-tags">
+                            <span>Flutter</span>
+                            <span>React Native</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-card dev-card">
+                        <div class="dev-card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>UI/UX 设计</h3>
+                        <p>以用户为中心的设计思维，创造直观流畅的交互体验</p>
+                        <div class="dev-tags">
+                            <span>Figma</span>
+                            <span>Prototype</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="ai-tools" class="ai-tools">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">AI工具集</span>
+                <h2 class="section-title">AI 赋能创作</h2>
+                <p class="section-desc">借助前沿 AI 技术，提升创作效率与品质</p>
+            </div>
+
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI 图像生成</h3>
+                    <p>利用 Stable Diffusion 与 Midjourney 进行高质量图像创作与后期处理</p>
+                    <ul class="tool-features">
+                        <li><i class="fas fa-check"></i> 文生图工作流</li>
+                        <li><i class="fas fa-check"></i> 图像修复与扩展</li>
+                        <li><i class="fas fa-check"></i> 风格迁移</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>LLM 应用开发</h3>
+                    <p>基于大语言模型构建智能对话、内容生成与自动化工作流</p>
+                    <ul class="tool-features">
+                        <li><i class="fas fa-check"></i> RAG 知识库系统</li>
+                        <li><i class="fas fa-check"></i> AI Agent 开发</li>
+                        <li><i class="fas fa-check"></i> 多模型编排</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>AI 视频制作</h3>
+                    <p>运用 AI 工具进行视频生成、剪辑与后期特效处理</p>
+                    <ul class="tool-features">
+                        <li><i class="fas fa-check"></i> AI 视频生成</li>
+                        <li><i class="fas fa-check"></i> 自动化剪辑</li>
+                        <li><i class="fas fa-check"></i> 特效与调色</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="images/DSC04989.jpg" alt="关于 Phuntsok">
+                        <div class="about-img-decor"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">关于我</span>
+                    <h2 class="section-title">
+                        用创意与技术<br>
+                        <span class="highlight">创造价值</span>
+                    </h2>
+                    <p class="about-text">
+                        你好！我是 Phuntsok，一名充满热情的创意设计师与全栈开发者。
+                        我热衷于将复杂的问题转化为简洁优雅的解决方案。
+                    </p>
+                    <p class="about-text">
+                        凭借多年的设计与开发经验，我专注于创建既美观又实用的数字产品。
+                        从前端交互到后端架构，从视觉设计到 AI 集成，
+                        我始终追求卓越的用户体验。
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">所在地</span>
+                                <span class="info-value">中国</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="info-label">职业</span>
+                                <span class="info-value">创意设计师 & 开发者</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">邮箱</span>
+                                <span class="info-value">phuntsok@example.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">专长</span>
+                                <span class="info-value">前端开发 · UI/UX · AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>联系我</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">联系</span>
+                <h2 class="section-title">一起合作吧</h2>
+                <p class="section-desc">有任何项目想法或合作意向？欢迎随时联系我</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>电子邮箱</h3>
+                        <p>phuntsok@example.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>所在城市</h3>
+                        <p>中国</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>社交媒体</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" placeholder="你的名字" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="你的邮箱地址" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <input type="text" id="subject" name="subject" placeholder="合作 / 项目 / 其他">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">消息</label>
+                        <textarea id="message" name="message" rows="6" placeholder="写下你想要说的话..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>发送消息</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#home" class="footer-logo">Phuntsok</a>
+                <ul class="footer-nav">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#ai-tools">AI工具集</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Phuntsok. All rights reserved.</p>
+                <p>用 <i class="fas fa-heart"></i> 精心打造</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
